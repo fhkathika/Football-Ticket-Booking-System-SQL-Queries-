@@ -76,7 +76,7 @@ where m.tournament_category='Champions League' and m.match_status='Available'
 -- Query 2: Search for all users whose full names start with 'Tanvir' or contain the phrase 'Haque' (case-insensitive).
 
 select user_id,full_name,email from Users as u
-where u.full_name like'Tanvir%' or u.full_name ilike'%Haque%'
+where u.full_name ilike'Tanvir%' or u.full_name ilike'%Haque%'
 
 
 -- Query 3: Retrieve all booking records where the payment status is missing (NULL), replacing the empty result with 'Action Required'.
